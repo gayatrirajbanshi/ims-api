@@ -5,9 +5,10 @@ import { RolesModule } from './roles/roles.module';
 
 
 import { PrismaModule } from './prisma/prisma.module';
+import { OrganizationsModule } from './organizations/organizations.module';
 
 @Module({
-  imports: [RolesModule, PrismaModule],
+  imports: [RolesModule, PrismaModule, OrganizationsModule],
   controllers: [AppController],
   providers: [AppService],
 })
